@@ -31,7 +31,6 @@ def call_function(function_call_part, verbose=False):
 
     if function_call_part.name in function_name:
         function_result = function_name[function_call_part.name]()
-        # print('FUNCTION CALL PART HAS A NAME AND A FUNCTION IS BEING CALLED')
     else:
         return types.Content(
             role="tool",
